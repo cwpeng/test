@@ -8,10 +8,20 @@
   gtag('js', new Date());
 
   gtag('config', 'G-HWPQL8JF0Q');
+
+  function send(){
+    gtag("event", "分享", {
+      "article_title": "GA 簡介",
+      "social_platform": "Line",
+      "test": "haha"
+    });
+    alert("做本來要做的事情");
+  }
 </script>
 <title>My Second Page</title>
 </head>
 <body>
   My Second Page. <a href="home.html">Back Home</a>.
+  <button onclick="send()">點我</button>
 </body>
 </html>
